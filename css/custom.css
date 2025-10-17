@@ -1,12 +1,11 @@
-/* Sfondo generale */
 body {
-  background-color: #2f2f2f; /* grigio scuro */
+  background-color: #1a1f2e; /* blu notte */
   color: #212529;
 }
 
-/* Card principale (contenitore) */
+/* Card principale (contenitore pastello blu) */
 .page-card {
-  background-color: #e8e9eb; /* grigio pastello */
+  background-color: #e3ecff; /* blu chiarissimo */
   border: none;
   border-radius: 15px;
   min-height: 80vh;
@@ -14,13 +13,13 @@ body {
 
 /* Sezioni interne */
 .section-header {
-  background-color: #e0e1e3; /* grigio pastello più chiaro */
+  background-color: #d6e3ff; /* blu pastello leggero */
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 .section-body {
-  background-color: #e8e9eb;
+  background-color: #e3ecff;
   padding: 10px;
   border-radius: 10px;
 }
@@ -29,7 +28,7 @@ body {
 .list-title {
   letter-spacing: 0.05em;
   font-weight: 600;
-  color: #6c757d;
+  color: #4065b4; /* blu medio */
 }
 
 /* Icone tonde */
@@ -40,22 +39,35 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #d6d8da;
+  background: #b5d0ff; /* blu chiaro */
   font-size: 1.1rem;
-  color: #333;
+  color: #1a1f2e;
 }
 
-/* Pulsanti */
+/* Stato completato */
+.todo-completed .todo-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Hover lista */
+.list-group-item:hover {
+  background-color: #edf3ff; /* azzurro chiarissimo */
+}
+
+/* Pulsanti outline */
 .btn-outline-secondary {
   border-radius: 20px;
+  border-color: #4065b4;
+  color: #4065b4;
 }
 
-/* Effetto hover sulla lista */
-.list-group-item:hover {
-  background-color: #f1f3f5;
+.btn-outline-secondary:hover {
+  background-color: #4065b4;
+  color: white;
 }
 
 /* Footer */
 footer {
-  color: #bbb;
+  color: #a8b3d1;
 }

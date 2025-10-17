@@ -351,9 +351,3 @@ if (uploadBtn && uploadInput) {
     if (file) uploadLista(file);
   });
 }
-
-
-
-
-
-
