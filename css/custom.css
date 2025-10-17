@@ -1,0 +1,61 @@
+/* Sfondo generale */
+body {
+  background-color: #2f2f2f; /* grigio scuro */
+  color: #212529;
+}
+
+/* Card principale (contenitore) */
+.page-card {
+  background-color: #e8e9eb; /* grigio pastello */
+  border: none;
+  border-radius: 15px;
+  min-height: 80vh;
+}
+
+/* Sezioni interne */
+.section-header {
+  background-color: #e0e1e3; /* grigio pastello più chiaro */
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.section-body {
+  background-color: #e8e9eb;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Titolo lista */
+.list-title {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+/* Icone tonde */
+.item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #d6d8da;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Pulsanti */
+.btn-outline-secondary {
+  border-radius: 20px;
+}
+
+/* Effetto hover sulla lista */
+.list-group-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Footer */
+footer {
+  color: #bbb;
+}
