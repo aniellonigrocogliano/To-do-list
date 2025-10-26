@@ -20,7 +20,6 @@ function writeTodos(todos) {
   fs.writeFileSync(DATA_FILE, JSON.stringify(todos, null, 2), 'utf8');
 }
 
-// CRUD
 app.get('/api/todos', (req, res) => res.json(readTodos()));
 
 app.post('/api/todos', (req, res) => {
@@ -49,7 +48,6 @@ app.delete('/api/todos/:id', (req, res) => {
   writeTodos(todos); res.json({ ok: true });
 });
 
-// EXPORT JSON
 app.get('/api/export', (req, res) => {
   const todos = readTodos();
   const maxId = todos.reduce((m, t) => Math.max(m, Number(t.id) || 0), 0);
@@ -59,7 +57,6 @@ app.get('/api/export', (req, res) => {
   res.send(JSON.stringify(payload, null, 2));
 });
 
-// IMPORT JSON
 app.post('/api/import', (req, res) => {
   const { data } = req.body;
   if (!data) return res.status(400).json({ error: 'manca campo data con il file JSON' });
